@@ -1,0 +1,159 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Verdana, serif;
+  background-color: white;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: antiquewhite;
+}
+
+span {
+  color: red;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: whitesmoke;
+}
+
+a {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: antiquewhite;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+}
+
+li {
+  font-size: 16px;
+  font-weight: 300;
+  list-style: none;
+}
+
+input {
+  border: none;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-rows: 10% auto;
+}
+.grid-wrapper header {
+  display: grid;
+  grid-template-columns: 20% auto;
+  background-color: #1a1c27;
+  z-index: 2;
+  opacity: 0.8;
+  align-items: center;
+  position: sticky;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+.grid-wrapper header .logo {
+  grid-column: 1 2;
+  margin-left: 1rem;
+}
+.grid-wrapper header .logo img {
+  max-height: 60px;
+  max-width: auto;
+}
+.grid-wrapper header nav {
+  grid-column: 2 3;
+  justify-self: end;
+  align-self: center;
+}
+.grid-wrapper header nav ul li {
+  display: inline-block;
+  margin-right: 1.5rem;
+  padding: 0.5rem;
+}
+.grid-wrapper header nav ul a:hover {
+  color: red;
+}
+.grid-wrapper .main-banner {
+  background-image: url("fitness.396fd203.jpg");
+  position: relative;
+  z-index: 1;
+  background-size: cover;
+  background-attachment: sticky;
+  background-position: top center;
+  padding: 10% 0;
+}
+.grid-wrapper .main-banner .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+}
+.grid-wrapper .main-banner .container {
+  position: relative;
+  width: 100%;
+  padding: 0 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-items: space-around;
+  align-content: flex-start;
+}
+.grid-wrapper .main-banner .container h2 {
+  text-transform: capitalize;
+  font-size: 32px;
+}
+.grid-wrapper .main-banner .container h2:first-of-type {
+  margin-top: 10rem;
+}
+.grid-wrapper .main-banner .container p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-right: 25em;
+  font-weight: bold;
+  word-break: break-word;
+  flex-basis: 10%;
+}
+.grid-wrapper .main-banner .container .btn {
+  font-size: 12px;
+  display: inline-block;
+  max-width: 8rem;
+  padding: 8px 20px 8px 20px;
+  margin: 2rem 0;
+  background-color: whitesmoke;
+  color: lightcoral;
+}
+.grid-wrapper .main-banner .container .btn:hover {
+  background-color: lightcoral;
+  color: whitesmoke;
+  transition: 0.2s ease-in-out;
+}
