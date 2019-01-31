@@ -60,9 +60,20 @@ img {
 li {
     font-size: 16px;
     font-weight: 300;
+    color: whitesmoke;
     list-style: none;
 }
 
 input {
     border: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    width: 70px;
+    margin: 0 auto;
+    border: 0;
+    border-top: 2px solid red;
+    padding: 1rem 0 1rem 0;
 }

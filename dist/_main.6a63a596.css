@@ -60,11 +60,22 @@ img {
 li {
   font-size: 16px;
   font-weight: 300;
+  color: whitesmoke;
   list-style: none;
 }
 
 input {
   border: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  width: 70px;
+  margin: 0 auto;
+  border: 0;
+  border-top: 2px solid red;
+  padding: 1rem 0 1rem 0;
 }
 
 .grid-wrapper {
@@ -190,15 +201,6 @@ input {
   font-size: 32px;
   font-weight: 300;
 }
-.grid-wrapper .service hr {
-  display: block;
-  height: 1px;
-  width: 70px;
-  margin: 0 auto;
-  border: 0;
-  border-top: 2px solid red;
-  padding: 1rem 0 1rem 0;
-}
 .grid-wrapper .service .container {
   position: relative;
   display: flex;
@@ -245,4 +247,158 @@ input {
   background-size: cover;
   position: relative;
   z-index: 1;
+}
+.grid-wrapper .prices {
+  background-color: #1a1c27;
+}
+.grid-wrapper .prices h2 {
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 0;
+  font-size: 32px;
+  font-weight: 300;
+}
+.grid-wrapper .prices .container {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: center;
+  max-width: 100%;
+  padding: 2rem 8rem;
+}
+.grid-wrapper .prices .container article {
+  margin: 2rem;
+  background-color: #222532;
+}
+.grid-wrapper .prices .container h3, .grid-wrapper .prices .container p, .grid-wrapper .prices .container ul {
+  padding: 1.5rem 5rem;
+}
+.grid-wrapper .prices .container p {
+  text-align: center;
+  background-color: #2e3242;
+}
+.grid-wrapper .prices .container p span {
+  color: whitesmoke;
+}
+.grid-wrapper .prices .container ul {
+  text-align: center;
+}
+.grid-wrapper .prices .container ul li {
+  padding-bottom: 1rem;
+}
+.grid-wrapper .prices .container .btn-singup {
+  text-align: center;
+  display: block;
+  background-color: #2e3242;
+  color: #eb315a;
+  padding: 0.8rem 1.2rem;
+  margin: 0 1rem 1rem 1rem;
+  text-transform: capitalize;
+}
+.grid-wrapper .prices .container .btn-singup:hover {
+  background-color: #1a1c27;
+  color: whitesmoke;
+}
+.grid-wrapper .login {
+  background-color: #171923;
+  text-align: center;
+}
+.grid-wrapper .login .container {
+  position: relative;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.grid-wrapper .login .container h2 {
+  font-size: 2em;
+  margin-top: 7rem;
+  text-transform: uppercase;
+}
+.grid-wrapper .login .container p {
+  color: #636d75;
+}
+.grid-wrapper .login .container h2, .grid-wrapper .login .container p {
+  margin-bottom: 1rem;
+}
+.grid-wrapper .login .container form {
+  display: block;
+  margin: 1rem 0 2rem 0;
+}
+.grid-wrapper .login .container form input {
+  display: block;
+  margin: 0 auto;
+  text-align: left;
+  min-width: 30%;
+  background-color: #171923;
+  color: #e4e4e4;
+  outline: none;
+  border-bottom: 1px solid #eb315a;
+  padding-bottom: 0.5rem;
+  margin-top: 3rem;
+}
+.grid-wrapper .login .container form .btn-login {
+  margin: 3rem 0;
+  padding: 0.7rem;
+  border: 1px solid #eb315a;
+  background-color: #171923;
+  color: #eb315a;
+  min-width: 30%;
+  text-transform: capitalize;
+}
+.grid-wrapper .login .container form .btn-login:hover {
+  color: #e4e4e4;
+  border-color: #e4e4e4;
+  cursor: pointer;
+}
+.grid-wrapper .faq {
+  background-color: #1a1c27;
+  text-align: center;
+}
+.grid-wrapper .faq h2 {
+  margin-top: 5rem;
+}
+.grid-wrapper .faq .container {
+  position: relative;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4rem;
+  margin-bottom: 4rem;
+}
+.grid-wrapper .faq .container article {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 1rem;
+}
+.grid-wrapper .faq .container article h3 {
+  margin: 0.5rem 0;
+}
+.grid-wrapper .faq .container article p {
+  color: gray;
+  max-width: 100%;
+}
+.grid-wrapper footer {
+  background: #13191d url("footer.6d410079.jpg") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.grid-wrapper footer .container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(19, 19, 21, 0.89);
+}
+.grid-wrapper footer .container {
+  display: flex;
+}
+.grid-wrapper footer .container article, .grid-wrapper footer .container address {
+  display: flex;
 }
