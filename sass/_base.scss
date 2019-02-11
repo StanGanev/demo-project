@@ -11,11 +11,8 @@
 
 html {
     scroll-behavior: smooth;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 body {
@@ -25,6 +22,17 @@ body {
     line-height: 1.5;
     text-align: left;
     font-size: 100%;
+}
+
+.grid-wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 80px 2fr auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
 }
 
 h1,h2,h3,h4,h5,h6 {

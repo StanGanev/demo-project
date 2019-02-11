@@ -1,0 +1,64 @@
+.prices {
+    background-color: #1a1c27;
+    width: 100vw;
+
+    h2 {
+        text-align: center;
+        padding: 2rem;
+        margin-bottom: 0;
+        font-size: 32px;
+        font-weight: 300;          
+    }
+
+    .container {
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        justify-items: center;
+        flex-wrap: wrap;
+        max-width: 100%;
+        padding: 2rem 8rem;
+
+        article {
+            margin: 2rem;
+            background-color: #222532;            
+        }
+
+        h3,p,ul {               
+            padding: 1.5rem 5rem;
+
+        }
+
+        p {
+            text-align: center;
+            background-color: #2e3242;
+
+            span {
+                color: whitesmoke;
+            }
+        }
+
+        ul {
+            text-align: center;
+
+            li {
+                padding-bottom: 1rem;
+            }
+        }
+
+        .btn-singup {
+            text-align: center;
+            display: block;
+            background-color: #2e3242;
+            color: #eb315a;
+            padding: 0.8rem 1.2rem;
+            margin: 0 1rem 1rem 1rem;
+            text-transform: capitalize;
+        }
+
+        .btn-singup:hover {
+            background-color: #1a1c27;
+            color: whitesmoke;
+        }
+    }
+}

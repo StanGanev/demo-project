@@ -1,0 +1,42 @@
+.faq {
+    background-color: #1a1c27;
+    text-align: center;
+    width: 100vw;
+
+    h2 {
+        margin-top: 5rem;
+    }
+
+    .container {
+        position: relative;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4rem;
+        margin-bottom: 4rem;
+
+        article {
+            flex-basis: 50%;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            padding: 1rem;                            
+
+            h3 {
+                margin: 0.5rem 0;
+            }
+
+            p {
+                color: gray;
+                max-width: 100%;
+            }
+        }
+    }
+
+    @media screen and ( max-width: 600px ) {
+        .container {
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+    }
+}

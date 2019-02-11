@@ -1,0 +1,62 @@
+.coaches {
+    background-color: #1a1c27;
+    width: 100vw;
+
+    .container {
+        position: relative;
+        padding: 5rem 8rem;
+        display: flex;
+        width: 100vw;
+        height: auto;
+
+        article {
+            flex: 1 0 30%;
+            margin-bottom: 2rem;
+
+            h2,h3,h4 {
+                margin: 1rem 0;
+                width: 100%;
+            }
+
+            h3 {
+                border-left: 3px solid red;
+                padding-left: 1rem;
+                margin-bottom: 2rem;
+            }
+
+            h4 {
+                width: 80%;
+            }
+
+            p {
+                width: 80%;
+            }
+        }
+
+        figure {
+            max-width: 80%;
+            height: auto;
+            flex: 1 1 auto;
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+
+        .container {
+            flex-direction: column;
+            padding: 2rem;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+
+        .container {
+            padding: 3rem;
+        }
+    }
+    
+}

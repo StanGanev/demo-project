@@ -1,0 +1,75 @@
+.main-banner {
+    background-image: url('./images/fitness.jpg');
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+    padding: 10% 0;
+    width: 100vw;
+    height: auto;
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left:0;
+        right: 0;
+        opacity: 0.5;
+    }
+
+    .container {
+        position: relative;
+        width: 100%;
+        padding: 0 8rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;        
+
+        h2 {
+            font-size: 32px;
+            flex: 1;
+        }
+
+        h2:first-of-type {
+            margin-top: 5rem;
+        }
+
+        p {
+            display: flex;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            width: 50%;
+            font-weight: bold;
+            word-wrap: wrap;
+        }
+
+        .btn {
+            font-size: 12px;
+            display: inline-block;
+            max-width: 8rem;
+            padding: 8px 20px 8px 20px;
+            margin: 1.5rem 0;
+            background-color: whitesmoke;
+            color: lightcoral;
+        }
+
+        .btn:hover {
+            background-color: lightcoral;
+            color: whitesmoke;
+            transition: 0.2s ease-in-out;
+        }
+    }
+
+    @media screen and ( max-width: 600px ) {
+        .container {
+            padding: 2rem;
+        }
+    }
+
+    @media screen and ( max-width: 600px ) {
+        .container {
+            padding: 3rem;
+        }
+    }
+}
