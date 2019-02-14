@@ -11,11 +11,12 @@
 
     .overlay {
         position: absolute;
+        background-color: #0D0D0D;
         top: 0;
         bottom: 0;
         left:0;
         right: 0;
-        opacity: 0.5;
+        opacity: 0.3;
     }
 
     .container {
@@ -58,12 +59,6 @@
             background-color: lightcoral;
             color: whitesmoke;
             transition: 0.2s ease-in-out;
-        }
-    }
-
-    @media screen and ( max-width: 600px ) {
-        .container {
-            padding: 2rem;
         }
     }
 

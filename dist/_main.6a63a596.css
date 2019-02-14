@@ -235,11 +235,12 @@ header .hamburgerContainer .menu-btn:checked ~ .menu-icon {
 }
 .main-banner .overlay {
   position: absolute;
+  background-color: #0D0D0D;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 .main-banner .container {
   position: relative;
@@ -277,11 +278,6 @@ header .hamburgerContainer .menu-btn:checked ~ .menu-icon {
   background-color: lightcoral;
   color: whitesmoke;
   transition: 0.2s ease-in-out;
-}
-@media screen and (max-width: 600px) {
-  .main-banner .container {
-    padding: 2rem;
-  }
 }
 @media screen and (max-width: 600px) {
   .main-banner .container {
@@ -325,7 +321,7 @@ header .hamburgerContainer .menu-btn:checked ~ .menu-icon {
   flex: 1 1 auto;
 }
 .coaches .container figure img {
-  max-width: 100%;
+  width: auto;
   height: auto;
 }
 @media screen and (max-width: 600px) {
